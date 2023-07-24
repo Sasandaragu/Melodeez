@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px;
+    background-image:url("../Images/Background/presentation_back.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 3%;
+
+}
+
+.logo img{
+    position: absolute;
+    top: 20%;
+	left: 45%;
+	width: 47%;
+	height: 50%;
+	margin: auto;
+    opacity: 0;
+    animation: title-animate 3s ease forwards;
+}
+.students {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+}
+
+.student{
+    
+    background-color: #e6e5ee;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
+    width: 200px; 
+    max-width: 100%; 
+    height: auto;
+    
+}
+
+.student-pic {
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 90%);
+}
+
+img{
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.details {
+    padding: 20px 30px;
+}
+
+h3{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+p{
+    color: rgb(156, 22, 239);
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 2px;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+@keyframes title-animate {
+    0% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+.title {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+  }
+
+  .title h3 {
+    font-size: 45px; 
+    color: rgb(255, 255, 255);
+  }
+  
+  
+
+
+  

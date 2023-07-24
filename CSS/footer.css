@@ -1,0 +1,103 @@
+footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "open sans";
+    padding-top:40px;
+    color: #fff;
+    bottom: 0;
+    
+}
+footer h5{
+    color:#fff}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.footer h4{
+    letter-spacing: 7px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    
+}
+
+.footer h5{
+    max-width: 500px
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+   
+}
+
+.socialicons{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    
+}
+
+.socialicons li{
+    margin: 0 50px;
+}
+
+.socialicons a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.socialicons a i{
+    font-size: 1.1rem
+    transition: color .4s ease;
+
+}
+
+.socialicons a:hover i{
+    color: aqua
+}
+
+.bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    
+}
+
+.bottom a{
+    font-weight: 200;
+    color: #fff;
+    
+}
+
+.bottom a:hover{
+    color: aqua
+}
+
+.bottom ul li{
+    margin: 0 100px;
+}
+
+.bottom ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0rem 0;
+}
