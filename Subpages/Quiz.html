@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../CSS/navbar-sub.css">
+    <link rel="stylesheet" href="../CSS/Quiz.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <header class="header">
+			<a href="PageEditor3.html" class="logo">
+				<img src="../Images/Logo/sub.png" alt="logo">
+			</a>
+
+			<nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="../Subpages/commentForm.html">Comments</a>
+                <a href="../Subpages/shop.html">Shop</a>
+                <a href="../Subpages/image-gallery.html">Gallery</a>
+                <a href="../Subpages/quiz.html" class="active">Quiz</a>
+                <a href="../Subpages/svg-diagram.html">Sitemap</a>
+                <a href="../Subpages/StudentsDetails.html">About-us</a>
+            </nav>
+		</header>
+
+
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Quiz</h1>
+                    <div class="quiz-header">
+                        <span>Music website Quiz</span>
+                        <span class="header-score">Score 0 / 100</span>
+                        <div class="timer">Time:<span id="Time-remaining">60</span></div>
+                    </div>
+                    <h2 class="question-text">What is the most basic element of music?</h2>
+
+                    <div class="option-list">
+                        <!--<div class="option">
+                            <span>A. Melody</span>
+                        </div>
+
+                        <div class="option">
+                            <span>B. Rhythm</span>
+                        </div>
+
+                        <div class="option">
+                            <span>C. Harmony</span>
+                        </div>
+
+                        <div class="option">
+                            <span>D. Tempo</span>
+                        </div>-->
+                    </div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total">Question : 1 / 10</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+
+
+                <div class = "result-box">
+                    <h2>Quiz Result!</h2>
+                    <div class = "percentage-container">
+                       <div class = "circular-progress">
+                           <span class = "progress-value">0%</span>
+                       </div> 
+
+                       <span class="score-text">Your Score 0 out of 10</span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="tryAgain-btn">Start Again</button>
+                        <button class="goHome-btn">Go To Home</button>
+                    </div> 
+            
+                </div>
+            </section>
+
+            <section class="home">
+                <div class="home-content">
+                    <h1>Welcome to Quiz</h1>
+                    <p>Test your music knowledge and discover your inner maestro with our interactive and engaging music quiz!</p>
+                    <button class="start-btn">Start Quiz</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <div class="popup-info">
+        <h2>QUIZ INSTRUCTIONS</h2>
+        <span class="info">1. You have 60 seconds to finish the quiz.</span>
+        <span class="info">2. For each correct answer you get 10 marks.</span>
+        <span class="info">3. You will not lose marks for wrong answers.</span>
+        <span class="info">4. You can answer only one question at a time.</span>
+        <span class="info">5. Click the next button to procede to the next question.</span>
+        <span class="info">6. You cannot go back to the previous question if you have moved to the next one.</span>
+    
+    <div class="btn-group">
+        <button class="info-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="info-btn continue-btn">Continue</a>
+    </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+            <h4>Melodeez</h4>
+            <h5>Your Ultimate Music Destination!</h5>
+
+            <ul class="socialicons">
+                <li><a href="#"><i class="fa fa-google"></i> - Google</a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i> - Facebook</a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i> - Instagram</a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i> - Youtube</a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i> - Linkedin</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom">
+            <p>Made by-: <a href="PageEditor3.html">Hirushi Silva</a></p>
+                <ul>
+                    <li>Group - 10</li>
+                    <li>Group Coursework</li>
+                    <li>4COSC011C</li>
+                    <li>Web Design & Development</li>
+                </ul>
+        </div>
+    </footer>
+
+    <script src="../JS/questions.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

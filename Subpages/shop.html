@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">   
+ 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="../CSS/navbar-sub.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../CSS/shop.css">
+        <link rel="stylesheet" href="../CSS/cart.css">
+        <title>Shop</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="PageEditor1.html" class="logo">
+                <img src="../Images/Logo/sub.png" alt="logo">
+            </a>
+    
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="../Subpages/commentForm.html">Comments</a>
+                <a href="../Subpages/shop.html" class="active">Shop</a>
+                <a href="../Subpages/image-gallery.html">Gallery</a>
+                <a href="../Subpages/quiz.html">Quiz</a>
+                <a href="../Subpages/svg-diagram.html">Sitemap</a>
+                <a href="../Subpages/StudentsDetails.html">About-us</a>
+            </nav>
+        </header>
+
+
+    <div class="page-content">
+        
+        <h1><br><br><br> Melodeez <br>Online Merchandise</h1><br>
+        <div class="products">
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/violin.jpg" alt="violin">
+                    </div> 
+                    <div class="products-description">
+                        Violin<div class="price">$291 </div>
+                        <input type="button" id="violin" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/acoustic-guitar.jpg" alt="guitar">
+                    </div>
+                    <div class="products-description">
+                        Acoustic Guitar<div class="price">$321</div>
+                        <input type="button" id="guitar" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/clarinet.jpg" alt="clarinet">
+                    </div>
+                    <div class="products-description">
+                        Clarinet<div class="price">$122 </div>
+                        <input type="button" id="clarinet" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/piano.jpg" alt="piano">
+                    </div>
+                    <div class="products-description">
+                        Piano<div class="price" >$1530 </div>
+                        <input type="button" id="piano" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/organ.jpg" alt="organ">
+                    </div>
+                    <div class="products-description">
+                        Organ<div class="price" >$137</div>
+                        <input type="button" id="organ" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/CD-Player.jpg" alt="CD-player">
+                    </div>
+                    <div class="products-description">
+                        CD Player<div class="price" >$183</div>
+                        <input type="button" id="CD-player" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/headphones.jpg" alt="headphones">
+                    </div>
+                    <div class="products-description">
+                        Headphones<div class="price" >$45 </div>
+                        <input type="button" id="headphones" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-box">
+                    <div class="image">
+                        <img src="../Images/ProductImages/speakers.jpg" alt="speakers">
+                    </div>
+                    <div class="products-description">
+                        Stereo Loudspeakers<div class="price" >$260</div>
+                        <input type="button" id="speakers" value=" "> <a class="cartButton" onclick="location.reload()">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <div class="cart-box">
+            <h2>Your order</h2>
+            <div class="cart-headers">
+                <h4 class="product-title">Product</h4>
+                <h4 class="product-price">Price</h4>
+                <h4 class="product-quantity">Quantity</h4>
+                <h4 class="product-total">Total</h4>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+        </div>
+        <div>
+            <input type="button" id="proceedButton" name="proceed" value="Proceed to Payment" onclick="proceed()">
+        </div>
+
+        <footer>
+            <div class="footer">
+                <h4>Melodeez</h4>
+                <h5>Your Ultimate Music Destination!</h5>
+
+                <ul class="socialicons">
+                    <li><a href="#"><i class="fa fa-google"></i> - Google</a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i> - Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> - Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i> - Youtube</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i> - Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="bottom">
+                <p>Made by-: <a href="PageEditor1.html">Umesha Samarakoon</a></p>
+                    <ul>
+                        <li>Group - 10</li>
+                        <li>Group Coursework</li>
+                        <li>4COSC011C</li>
+                        <li>Web Design & Development</li>
+                    </ul>
+            </div>
+        </footer>
+        <script src="../JS/shop.js"></script>
+    </body>
+</html>
+        

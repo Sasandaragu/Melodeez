@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="../CSS/navbar-sub.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/shop.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/cart.css">
+        <title>Shop</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="PageEditor1.html" class="logo">
+                <img src="../Images/Logo/sub.png" alt="logo">
+            </a>
+    
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="../Subpages/commentForm.html">Comments</a>
+                <a href="../Subpages/shop.html" class="active">Shop</a>
+                <a href="../Subpages/image-gallery.html">Gallery</a>
+                <a href="../Subpages/quiz.html">Quiz</a>
+                <a href="../Subpages/svg-diagram.html">Sitemap</a>
+                <a href="../Subpages/StudentsDetails.html">About-us</a>
+            </nav>
+        </header>
+        <div class="cart-content">
+            <div class="return-to-shop">
+                <div class="return">
+                    <a href="../subPages/shop.html"><img src="../Images/other/backArrow.jpg" alt="back to shop"></a>
+                </div>
+            </div>
+
+            <div class="customer">
+                <h2>Billing Details</h2>
+                <div class="cart-form-content">
+                    <div class="error"></div>
+                    <form class="cart-form" method="get" id="cart-form">
+                        <div class="name">
+                            <label for="fname">First Name<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="f-name" width="14" height="14"></label> 
+                            <input type="text" id="fname" name="first name" placeholder="Your First Name" maxlength="10" required>
+
+                            <label for="sname">Second Name<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="s-name" width="14" height="14"></label> 
+                            <input type="text" id="sname" name="second name" placeholder="Your Second Name" maxlength="12" required>
+                        </div>
+
+                        <div class="contacts">
+                            <label for="contactNo">Contact number<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="contact-no" width="14" height="14"></label>
+                            <input type="tel" id="contactNo" name="contact number" placeholder="Your Contact number" size="10" required>
+
+                            <label for="email">Email Address<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="mail" width="14" height="14"></label>
+                            <input type="email" id="email" name="Email" placeholder="Your Email Address" required>
+                        </div>
+
+                        <div class="addressInfo">
+                            <label for="address">Address<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="bill-address" width="14" height="14"></label>
+                            <input type="text" id="address" name="Address" placeholder="Your Home Address" required>
+
+                            <label for="city">City<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="city-name" width="14" height="14"></label>
+                            <input type="text" id="city" name="City" placeholder="Your City Name" required>
+
+                            <label for="country">Country<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="country-name" width="14" height="14"></label>
+                            <input type="text" id="country" name="Country" placeholder="Your Country name" required>
+
+                            <label for="postCode">Post Code<img src="../Images/other/checked.png" alt="checked" class="Mark1 tick" id="post-code" width="14" height="14"></label>
+                            <input type="text" id="postCode" name="Post Code" placeholder="Your Post Code" required>
+                        </div>
+
+                        <div class="cart-buttons">
+                            <button data-modal-target type="submit" onclick="return formValidation();" id="submitButton">Complete Order</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            
+            <div id="myModal" class="modal">
+                <div class="modal-container">
+                    <div class="modal-head">
+                        <h1>Greetings <span class="userName">n</span>, Checkout Details</h1>
+                        <button class="close">Edit</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="summary-details">
+                            <h3>Checkout Details</h3>
+                            <div class="modal-row">
+                                <div class="modal-column">
+                                    <label for="fname">First Name</label>
+                                    <span class="fname-span">FName</span>
+                                </div>
+                                <div class="modal-column">
+                                    <label for="sname">Second Name</label>
+                                    <span class="sname-span">SName</span>
+                                </div>
+                            </div>
+                            <div class="modal-row">
+                                <div class="modal-column">
+                                    <label for="contactNo">Contact Number</label>
+                                    <span class="contactNo-span">Contact</span>
+                                </div>
+                                <div class="modal-column">
+                                    <label for="email">Email Address</label>
+                                    <span class="email-span">Email</span>
+                                </div>
+                            </div>
+                            <div class="modal-row">
+                                <div class="modal-column">
+                                    <label for="address">Address</label>
+                                    <span class="address-span">Address</span>
+                                </div>
+                                <div class="modal-column">
+                                    <label for="city">City</label>
+                                    <span class="city-span">City Name</span>
+                                </div>
+                            </div>
+                            <div class="modal-row">
+                                <div class="modal-column">
+                                    <label for="country">Country</label>
+                                    <span class="country-span">Country Name</span>
+                                </div>
+                                <div class="modal-column">
+                                    <label for="postCode">Post Code</label>
+                                    <span class="postCode-span">Post Code</span>
+                                </div>
+                            </div>
+                    
+					        <div class="modal-row">
+							    <div class="modal-column">
+								    <label for="card-no">Card Number<img src="../Images/other/checked.png" alt="checking" class="Mark2 tick" id="mark1" width="14" height="14"></label>
+								    <input type="text" id="card-no" name="card number">
+							    </div>
+							    <div class="modal-column">
+								    <label for="card-name">Card Holder Name<img src="../Images/other/checked.png" alt="checking" class="Mark2 tick" id="mark3" width="14" height="14"></label>
+								    <input type="text" id="card-name" name="card name">
+							    </div>	
+						    </div>
+						    <div class="modal-row">
+						        <div class="modal-column"> 
+								    <label for="expiry">Expiry Date</label>
+								    <input type="date" id="expiry" name="Expiry Date">
+							    </div>
+							    <div class="modal-column">
+								    <label for="security-code">CVV<img src="../Images/other/checked.png" alt="checked" class="Mark2 tick" id="mark2" width="14" height="14"></label>
+								    <input type="text" id="security-code" name="Security Code">
+							    </div>	
+						    </div>	
+                            <div class="cart-buttons">
+                                <button type="submit" onclick="return paymentDone();" id="doneButton">Confirm Payment</button>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalFinished" class="modal-finished">
+            <div class="finished-content">
+                <img src="../Images/other/orderFinished.png" alt="PaymentDone">
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <h4>Melodeez</h4>
+                <h5>Your Ultimate Music Destination!</h5>
+
+                <ul class="socialicons">
+                    <li><a href="#"><i class="fa fa-google"></i> - Google</a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i> - Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> - Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i> - Youtube</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i> - Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="bottom">
+                <p>Made by-: <a href="PageEditor1.html">Umesha Samarakoon</a></p>
+                    <ul>
+                        <li>Group - 10</li>
+                        <li>Group Coursework</li>
+                        <li>4COSC011C</li>
+                        <li>Web Design & Development</li>
+                    </ul>
+            </div>
+        </footer>
+        <script src="../JS/shop.js"></script>
+    </body>
+</html>
